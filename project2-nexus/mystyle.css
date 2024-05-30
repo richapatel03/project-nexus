@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('curry.png') center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.restaurant {
+    position: relative;
+    width: 90%; /* Adjust the width as needed */
+    height: 90%; /* Adjust the height as needed */
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.restaurant .content {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.restaurant img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.restaurant .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+#small-text {
+    font-size: 25px;
+    text-align: left;
+}
+
+.container {
+    max-width: 430px;
+    width: 35%; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 2;
+    padding: 20px;
+}
+
+.container .form {
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+.container .form .title {
+    margin-top: 5px;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form .input-field {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 0 15px;
+    border: 2px solid rgb(125, 125, 125);
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border: #8EC5FC;
+}
+
+.form .forget-password {
+    display: flex;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.form a.text {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+.form a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button button {
+    border: none;
+    background-color: #e1ee26;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.button button:hover {
+    border: 2px solid rgb(125, 125, 125);
+}
+
+.forms .login-signup {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.forms .login-signup a {
+    color: blue;
+    text-decoration: none;
+}
+
+.forms .login-signup a:hover {
+    text-decoration: underline;
+}
+
+.field .error {
+    display: none;
+    align-items: center;
+    margin-top: 3px;
+    color: red;
+    font-size: 13px;
+    padding: 0 0px;
+}
+
+.rname {
+    margin-top: 5%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 900;
+    font-size: 45px;
+    color: limegreen;
+    opacity: 0.95;
+    text-align: center;
+}

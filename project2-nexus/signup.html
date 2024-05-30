@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Farmer's Yard</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form signup">
+            <div class="rname">Farmer's Yard</div>
+            <div class="title">Create Account</div>
+            <form class="signup" action="signup.php" method="POST">
+                
+                <div class="field">
+                    <div class="input-field username">
+                        <input type="text" name="username" class="username" placeholder="Username" required>
+                    </div>
+                    <span class="error username-error"><p class="error-text">Invalid Username</p></span>
+                    <div class="input-field email-id">
+                        <input type="email" name="email" class="email" placeholder="Email ID" required>
+                    </div>
+                    <span class="error email-error"><p class="error-text">Invalid Email</p></span>
+                    <div class="input-field create-password">
+                        <input type="password" name="password" class="password" placeholder="Password" required>
+                    </div>
+                    <span class="error password-error"><p class="error-text">Invalid Password</p></span>
+                    <div class="input-field confirm-password">
+                        <input type="password" name="confirm_password" class="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    <span class="error confirm-password-error"><p class="error-text">Passwords do not match</p></span>
+                    <div class="input-field button">
+                        <button type="submit" value="Signup">Signup</button>
+                    </div>
+                </div>
+            </form> 
+            <div class="signup-login">
+                <span class="text">Already have an account?
+                    <a href="login.html" class="text login-link">Login Now</a>
+                </span>
+            </div> 
+        </div>
+    </div>
+    
+</body>
+</html>

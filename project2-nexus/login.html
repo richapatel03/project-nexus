@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Farmer's Yard</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form login">
+            <div class="rname">Farmer's Yard</div>
+            <div class="title">Welcome Back</div>
+            <form class="login" action="login.php" method="POST">
+                
+                <div class="field">
+                    <div class="input-field email-id">
+                        <input type="text" name="email" class="email"  placeholder="Email ID" required>
+                    </div>
+                    <span class="error email-error"><p class="error-text">Invalid Email</p></span>
+                    <div class="input-field create-password">
+                        <input type="password" name="password" class="password" placeholder="Password" required>
+                    </div>
+                    <span class="error password-error"><p class="error-text">Invalid Password</p></span>
+                    <div class="forget-password">
+                        <a href="#" class="text">Forget Password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <button type="submit" value="Login" >Login</button>
+                    </div>
+                </div>
+            </form> 
+            <div class="login-signup">
+                <span class="text">Don't have an account?
+                    <a href="signup.html" class="text signup-link">Signup Now</a>
+                </span>
+            </div> 
+        </div>
+    </div>
+    
+</body>
+</html>
